@@ -43,7 +43,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="s21-bn-cP3" kind="push" id="LAd-zB-XNr"/>
+                                    <segue destination="2fR-MR-fsq" kind="push" id="LkY-60-U64"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" id="L6f-6m-Bx3"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="351" y="-290"/>
+            <point key="canvasLocation" x="-969" y="-450"/>
         </scene>
         <!--View Controller - Configurations-->
         <scene sceneID="XJT-NM-HuM">
@@ -67,7 +67,7 @@
                     <tabBarItem key="tabBarItem" title="Configurations" id="Vx3-hD-xZC"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1393" y="34"/>
+            <point key="canvasLocation" x="73" y="-126"/>
         </scene>
         <!--View Controller - Attack-->
         <scene sceneID="l5k-Wd-OVN">
@@ -83,7 +83,7 @@
                     <navigationItem key="navigationItem" id="701-VX-K2X"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1393" y="1241"/>
+            <point key="canvasLocation" x="73" y="1081"/>
         </scene>
         <!--View Controller - Defense-->
         <scene sceneID="34F-V8-a9E">
@@ -98,7 +98,7 @@
                     <tabBarItem key="tabBarItem" title="Defense" id="TT9-5n-R9i"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1393" y="661"/>
+            <point key="canvasLocation" x="73" y="501"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="K32-Rc-tdx">
@@ -119,17 +119,22 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="859" y="391"/>
+            <point key="canvasLocation" x="-461" y="231"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="dly-pK-Yfq">
+        <!--Choose Job View Controller-->
+        <scene sceneID="ZPT-RO-ZSO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KUQ-AW-XFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="s21-bn-cP3" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="CVn-G5-Ndo"/>
-                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3il-ks-Hbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="2fR-MR-fsq" customClass="chooseJobViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8BO-aa-0Tm" customClass="iCarousel">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mMy-h5-DJa"/>
+                </viewController>
             </objects>
-            <point key="canvasLocation" x="1001" y="-776"/>
+            <point key="canvasLocation" x="-391" y="-917"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="DHS-fd-mKa">
@@ -180,7 +185,7 @@
                     </tableView>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1461" y="-776"/>
+            <point key="canvasLocation" x="123" y="-925"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mdg-2Q-4nJ">
@@ -198,12 +203,22 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-175" y="-290"/>
+            <point key="canvasLocation" x="-1495" y="-450"/>
         </scene>
     </scenes>
     <classes>
+        <class className="chooseJobViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/chooseJobViewController.h"/>
+        </class>
         <class className="diablo3ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/diablo3ViewController.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

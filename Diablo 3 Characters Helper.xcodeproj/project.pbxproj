@@ -15,6 +15,10 @@
 		FEDF40EC158098FD002F3246 /* diablo3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDF40EB158098FD002F3246 /* diablo3AppDelegate.m */; };
 		FEDF40EF158098FD002F3246 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDF40ED158098FD002F3246 /* MainStoryboard.storyboard */; };
 		FEDF40F2158098FD002F3246 /* diablo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDF40F1158098FD002F3246 /* diablo3ViewController.m */; };
+		FEDF40FA1580DFE0002F3246 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEDF40F81580DFE0002F3246 /* Model.xcdatamodeld */; };
+		FEDF40FD1580F5F9002F3246 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDF40FC1580F5F9002F3246 /* iCarousel.m */; };
+		FEDF40FF1580F645002F3246 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40FE1580F645002F3246 /* QuartzCore.framework */; };
+		FEDF41051580FA0A002F3246 /* chooseJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDF41041580FA0A002F3246 /* chooseJobViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,12 @@
 		FEDF40EE158098FD002F3246 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		FEDF40F0158098FD002F3246 /* diablo3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = diablo3ViewController.h; sourceTree = "<group>"; };
 		FEDF40F1158098FD002F3246 /* diablo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = diablo3ViewController.m; sourceTree = "<group>"; };
+		FEDF40F91580DFE0002F3246 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FEDF40FB1580F5F9002F3246 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		FEDF40FC1580F5F9002F3246 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		FEDF40FE1580F645002F3246 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FEDF41031580FA0A002F3246 /* chooseJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chooseJobViewController.h; path = ../chooseJobViewController.h; sourceTree = "<group>"; };
+		FEDF41041580FA0A002F3246 /* chooseJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = chooseJobViewController.m; path = ../chooseJobViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDF40FF1580F645002F3246 /* QuartzCore.framework in Frameworks */,
 				FEDF40DC158098FD002F3246 /* UIKit.framework in Frameworks */,
 				FEDF40DE158098FD002F3246 /* Foundation.framework in Frameworks */,
 				FEDF40E0158098FD002F3246 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +78,7 @@
 		FEDF40DA158098FD002F3246 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FEDF40FE1580F645002F3246 /* QuartzCore.framework */,
 				FEDF40DB158098FD002F3246 /* UIKit.framework */,
 				FEDF40DD158098FD002F3246 /* Foundation.framework */,
 				FEDF40DF158098FD002F3246 /* CoreGraphics.framework */,
@@ -77,12 +89,17 @@
 		FEDF40E1158098FD002F3246 /* Diablo 3 Characters Helper */ = {
 			isa = PBXGroup;
 			children = (
+				FEDF41031580FA0A002F3246 /* chooseJobViewController.h */,
+				FEDF41041580FA0A002F3246 /* chooseJobViewController.m */,
 				FEDF40EA158098FD002F3246 /* diablo3AppDelegate.h */,
 				FEDF40EB158098FD002F3246 /* diablo3AppDelegate.m */,
 				FEDF40ED158098FD002F3246 /* MainStoryboard.storyboard */,
+				FEDF40F81580DFE0002F3246 /* Model.xcdatamodeld */,
 				FEDF40F0158098FD002F3246 /* diablo3ViewController.h */,
 				FEDF40F1158098FD002F3246 /* diablo3ViewController.m */,
 				FEDF40E2158098FD002F3246 /* Supporting Files */,
+				FEDF40FB1580F5F9002F3246 /* iCarousel.h */,
+				FEDF40FC1580F5F9002F3246 /* iCarousel.m */,
 			);
 			path = "Diablo 3 Characters Helper";
 			sourceTree = "<group>";
@@ -164,6 +181,9 @@
 				FEDF40E8158098FD002F3246 /* main.m in Sources */,
 				FEDF40EC158098FD002F3246 /* diablo3AppDelegate.m in Sources */,
 				FEDF40F2158098FD002F3246 /* diablo3ViewController.m in Sources */,
+				FEDF40FA1580DFE0002F3246 /* Model.xcdatamodeld in Sources */,
+				FEDF40FD1580F5F9002F3246 /* iCarousel.m in Sources */,
+				FEDF41051580FA0A002F3246 /* chooseJobViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +301,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FEDF40F81580DFE0002F3246 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FEDF40F91580DFE0002F3246 /* Model.xcdatamodel */,
+			);
+			currentVersion = FEDF40F91580DFE0002F3246 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FEDF40CE158098FD002F3246 /* Project object */;
 }
