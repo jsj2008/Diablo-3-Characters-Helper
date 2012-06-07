@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEDF40DC158098FD002F3246 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40DB158098FD002F3246 /* UIKit.framework */; };
+		FEDF40DE158098FD002F3246 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40DD158098FD002F3246 /* Foundation.framework */; };
+		FEDF40E0158098FD002F3246 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40DF158098FD002F3246 /* CoreGraphics.framework */; };
+		FEDF40E6158098FD002F3246 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEDF40E4158098FD002F3246 /* InfoPlist.strings */; };
+		FEDF40E8158098FD002F3246 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDF40E7158098FD002F3246 /* main.m */; };
+		FEDF40EC158098FD002F3246 /* diablo3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDF40EB158098FD002F3246 /* diablo3AppDelegate.m */; };
+		FEDF40EF158098FD002F3246 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDF40ED158098FD002F3246 /* MainStoryboard.storyboard */; };
+		FEDF40F2158098FD002F3246 /* diablo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDF40F1158098FD002F3246 /* diablo3ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FEDF40D7158098FD002F3246 /* Diablo 3 Characters Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diablo 3 Characters Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDF40DB158098FD002F3246 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEDF40DD158098FD002F3246 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEDF40DF158098FD002F3246 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEDF40E3158098FD002F3246 /* Diablo 3 Characters Helper-Info.plist */ = {isa = PBXFileReference; path = "Diablo 3 Characters Helper-Info.plist"; sourceTree = "<group>"; };
+		FEDF40E5158098FD002F3246 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEDF40E7158098FD002F3246 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEDF40E9158098FD002F3246 /* Diablo 3 Characters Helper-Prefix.pch */ = {isa = PBXFileReference; path = "Diablo 3 Characters Helper-Prefix.pch"; sourceTree = "<group>"; };
+		FEDF40EA158098FD002F3246 /* diablo3AppDelegate.h */ = {isa = PBXFileReference; path = diablo3AppDelegate.h; sourceTree = "<group>"; };
+		FEDF40EB158098FD002F3246 /* diablo3AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = diablo3AppDelegate.m; sourceTree = "<group>"; };
+		FEDF40EE158098FD002F3246 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FEDF40F0158098FD002F3246 /* diablo3ViewController.h */ = {isa = PBXFileReference; path = diablo3ViewController.h; sourceTree = "<group>"; };
+		FEDF40F1158098FD002F3246 /* diablo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = diablo3ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEDF40D4158098FD002F3246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDF40DC158098FD002F3246 /* UIKit.framework in Frameworks */,
+				FEDF40DE158098FD002F3246 /* Foundation.framework in Frameworks */,
+				FEDF40E0158098FD002F3246 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEDF40CC158098FD002F3246 = {
+			isa = PBXGroup;
+			children = (
+				FEDF40E1158098FD002F3246 /* Diablo 3 Characters Helper */,
+				FEDF40DA158098FD002F3246 /* Frameworks */,
+				FEDF40D8158098FD002F3246 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEDF40D8158098FD002F3246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF40D7158098FD002F3246 /* Diablo 3 Characters Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEDF40DA158098FD002F3246 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF40DB158098FD002F3246 /* UIKit.framework */,
+				FEDF40DD158098FD002F3246 /* Foundation.framework */,
+				FEDF40DF158098FD002F3246 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEDF40E1158098FD002F3246 /* Diablo 3 Characters Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF40EA158098FD002F3246 /* diablo3AppDelegate.h */,
+				FEDF40EB158098FD002F3246 /* diablo3AppDelegate.m */,
+				FEDF40ED158098FD002F3246 /* MainStoryboard.storyboard */,
+				FEDF40F0158098FD002F3246 /* diablo3ViewController.h */,
+				FEDF40F1158098FD002F3246 /* diablo3ViewController.m */,
+				FEDF40E2158098FD002F3246 /* Supporting Files */,
+			);
+			path = "Diablo 3 Characters Helper";
+			sourceTree = "<group>";
+		};
+		FEDF40E2158098FD002F3246 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEDF40E3158098FD002F3246 /* Diablo 3 Characters Helper-Info.plist */,
+				FEDF40E4158098FD002F3246 /* InfoPlist.strings */,
+				FEDF40E7158098FD002F3246 /* main.m */,
+				FEDF40E9158098FD002F3246 /* Diablo 3 Characters Helper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEDF40D6158098FD002F3246 /* Diablo 3 Characters Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDF40F5158098FD002F3246 /* Build configuration list for PBXNativeTarget "Diablo 3 Characters Helper" */;
+			buildPhases = (
+				FEDF40D3158098FD002F3246 /* Sources */,
+				FEDF40D4158098FD002F3246 /* Frameworks */,
+				FEDF40D5158098FD002F3246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Diablo 3 Characters Helper";
+			productName = "Diablo 3 Characters Helper";
+			productReference = FEDF40D7158098FD002F3246 /* Diablo 3 Characters Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEDF40CE158098FD002F3246 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = diablo3;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = FEDF40D1158098FD002F3246 /* Build configuration list for PBXProject "Diablo 3 Characters Helper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEDF40CC158098FD002F3246;
+			productRefGroup = FEDF40D8158098FD002F3246 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEDF40D6158098FD002F3246 /* Diablo 3 Characters Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEDF40D5158098FD002F3246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDF40E6158098FD002F3246 /* InfoPlist.strings in Resources */,
+				FEDF40EF158098FD002F3246 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEDF40D3158098FD002F3246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDF40E8158098FD002F3246 /* main.m in Sources */,
+				FEDF40EC158098FD002F3246 /* diablo3AppDelegate.m in Sources */,
+				FEDF40F2158098FD002F3246 /* diablo3ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEDF40E4158098FD002F3246 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEDF40E5158098FD002F3246 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FEDF40ED158098FD002F3246 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEDF40EE158098FD002F3246 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEDF40F3158098FD002F3246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEDF40F4158098FD002F3246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEDF40F6158098FD002F3246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diablo 3 Characters Helper/Diablo 3 Characters Helper-Prefix.pch";
+				INFOPLIST_FILE = "Diablo 3 Characters Helper/Diablo 3 Characters Helper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEDF40F7158098FD002F3246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Diablo 3 Characters Helper/Diablo 3 Characters Helper-Prefix.pch";
+				INFOPLIST_FILE = "Diablo 3 Characters Helper/Diablo 3 Characters Helper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEDF40D1158098FD002F3246 /* Build configuration list for PBXProject "Diablo 3 Characters Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDF40F3158098FD002F3246 /* Debug */,
+				FEDF40F4158098FD002F3246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEDF40F5158098FD002F3246 /* Build configuration list for PBXNativeTarget "Diablo 3 Characters Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDF40F6158098FD002F3246 /* Debug */,
+				FEDF40F7158098FD002F3246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEDF40CE158098FD002F3246 /* Project object */;
+}
