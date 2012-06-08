@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Character" syncable="YES">
-        <attribute name="job_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    <entity name="Character" representedClassName="Character" syncable="YES">
         <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="job" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Job" inverseName="characters" inverseEntity="Job" syncable="YES"/>
+        <relationship name="stats" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Stat" inverseName="character" inverseEntity="Stat" syncable="YES"/>
+    </entity>
+    <entity name="Effect" representedClassName="Effect" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="skills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Skill" inverseName="effects" inverseEntity="Skill" syncable="YES"/>
+        <relationship name="stat" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Stat" inverseName="effect" inverseEntity="Stat" syncable="YES"/>
+    </entity>
+    <entity name="Job" representedClassName="Job" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="characters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Character" inverseName="job" inverseEntity="Character" syncable="YES"/>
+        <relationship name="skills" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Skill" inverseName="job" inverseEntity="Skill" syncable="YES"/>
+    </entity>
+    <entity name="Skill" representedClassName="Skill" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="effects" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Effect" inverseName="skills" inverseEntity="Effect" syncable="YES"/>
+        <relationship name="job" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Job" inverseName="skills" inverseEntity="Job" syncable="YES"/>
+    </entity>
+    <entity name="Stat" representedClassName="Stat" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="character" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="stats" inverseEntity="Character" syncable="YES"/>
+        <relationship name="effect" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Effect" inverseName="stat" inverseEntity="Effect" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Character" positionX="-11052" positionY="-738" width="128" height="90"/>
+        <element name="Character" positionX="-171" positionY="-45" width="128" height="90"/>
+        <element name="Job" positionX="-9" positionY="-99" width="128" height="105"/>
+        <element name="Skill" positionX="279" positionY="-54" width="128" height="90"/>
+        <element name="Effect" positionX="88" positionY="96" width="128" height="90"/>
+        <element name="Stat" positionX="-189" positionY="168" width="128" height="120"/>
     </elements>
 </model>

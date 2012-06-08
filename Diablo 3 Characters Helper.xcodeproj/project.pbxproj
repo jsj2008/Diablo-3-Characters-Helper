@@ -12,6 +12,11 @@
 		FEDEA2691581F054007A6065 /* moine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA2641581F054007A6065 /* moine.jpg */; };
 		FEDEA26A1581F054007A6065 /* shaman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA2651581F054007A6065 /* shaman.jpg */; };
 		FEDEA26B1581F054007A6065 /* sorcier.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA2661581F054007A6065 /* sorcier.jpg */; };
+		FEDEA2AA158232DC007A6065 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA2A9158232DC007A6065 /* Job.m */; };
+		FEDEA2AD158232DC007A6065 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA2AC158232DC007A6065 /* Character.m */; };
+		FEDEA2B0158232DD007A6065 /* Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA2AF158232DD007A6065 /* Effect.m */; };
+		FEDEA2B3158232DD007A6065 /* Skill.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA2B2158232DD007A6065 /* Skill.m */; };
+		FEDEA2B6158232DD007A6065 /* Stat.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA2B5158232DD007A6065 /* Stat.m */; };
 		FEDF40DC158098FD002F3246 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40DB158098FD002F3246 /* UIKit.framework */; };
 		FEDF40DE158098FD002F3246 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40DD158098FD002F3246 /* Foundation.framework */; };
 		FEDF40E0158098FD002F3246 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40DF158098FD002F3246 /* CoreGraphics.framework */; };
@@ -32,6 +37,16 @@
 		FEDEA2641581F054007A6065 /* moine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moine.jpg; sourceTree = "<group>"; };
 		FEDEA2651581F054007A6065 /* shaman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shaman.jpg; sourceTree = "<group>"; };
 		FEDEA2661581F054007A6065 /* sorcier.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sorcier.jpg; sourceTree = "<group>"; };
+		FEDEA2A8158232DC007A6065 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
+		FEDEA2A9158232DC007A6065 /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
+		FEDEA2AB158232DC007A6065 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		FEDEA2AC158232DC007A6065 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		FEDEA2AE158232DD007A6065 /* Effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Effect.h; sourceTree = "<group>"; };
+		FEDEA2AF158232DD007A6065 /* Effect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Effect.m; sourceTree = "<group>"; };
+		FEDEA2B1158232DD007A6065 /* Skill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skill.h; sourceTree = "<group>"; };
+		FEDEA2B2158232DD007A6065 /* Skill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Skill.m; sourceTree = "<group>"; };
+		FEDEA2B4158232DD007A6065 /* Stat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stat.h; sourceTree = "<group>"; };
+		FEDEA2B5158232DD007A6065 /* Stat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stat.m; sourceTree = "<group>"; };
 		FEDF40D7158098FD002F3246 /* Diablo 3 Characters Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diablo 3 Characters Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDF40DB158098FD002F3246 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEDF40DD158098FD002F3246 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +133,16 @@
 				FEDF40EB158098FD002F3246 /* diablo3AppDelegate.m */,
 				FEDF40ED158098FD002F3246 /* MainStoryboard.storyboard */,
 				FEDF40F81580DFE0002F3246 /* Model.xcdatamodeld */,
+				FEDEA2B4158232DD007A6065 /* Stat.h */,
+				FEDEA2B5158232DD007A6065 /* Stat.m */,
+				FEDEA2B1158232DD007A6065 /* Skill.h */,
+				FEDEA2B2158232DD007A6065 /* Skill.m */,
+				FEDEA2AE158232DD007A6065 /* Effect.h */,
+				FEDEA2AF158232DD007A6065 /* Effect.m */,
+				FEDEA2AB158232DC007A6065 /* Character.h */,
+				FEDEA2AC158232DC007A6065 /* Character.m */,
+				FEDEA2A8158232DC007A6065 /* Job.h */,
+				FEDEA2A9158232DC007A6065 /* Job.m */,
 				FEDF40F0158098FD002F3246 /* diablo3ViewController.h */,
 				FEDF40F1158098FD002F3246 /* diablo3ViewController.m */,
 				FEDF40E2158098FD002F3246 /* Supporting Files */,
@@ -212,6 +237,11 @@
 				FEDF40FA1580DFE0002F3246 /* Model.xcdatamodeld in Sources */,
 				FEDF40FD1580F5F9002F3246 /* iCarousel.m in Sources */,
 				FEDF41051580FA0A002F3246 /* chooseJobViewController.m in Sources */,
+				FEDEA2AA158232DC007A6065 /* Job.m in Sources */,
+				FEDEA2AD158232DC007A6065 /* Character.m in Sources */,
+				FEDEA2B0158232DD007A6065 /* Effect.m in Sources */,
+				FEDEA2B3158232DD007A6065 /* Skill.m in Sources */,
+				FEDEA2B6158232DD007A6065 /* Stat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
