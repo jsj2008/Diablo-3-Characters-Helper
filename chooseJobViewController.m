@@ -13,7 +13,7 @@
 @end
 
 @implementation chooseJobViewController
-@synthesize characters=_characters, wrap=_wrap;
+@synthesize characters=_characters, wrap=_wrap, carousel=_carousel;
 
 -(void)awakeFromNib{
     self.wrap=NO;
@@ -54,7 +54,7 @@
     return 0;
 }
 -(CGFloat)carouselItemWidth:(iCarousel *)carousel{
-    return 350;
+    return 150;
 }
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view{
     view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[self.characters objectAtIndex:index]]];
