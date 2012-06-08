@@ -24,7 +24,10 @@
 - (void)viewDidLoad
 {
     iCarousel *carousel=[[iCarousel alloc] init];
-    carousel.type=iCarouselTypeWheel;
+    carousel.type=iCarouselTypeCoverFlow;
+    carousel.centerItemWhenSelected=YES;
+    carousel.scrollSpeed=0.001;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -61,5 +64,31 @@
 - (BOOL)carouselShouldWrap:(iCarousel *)carousel
 {
     return self.wrap;
+}
+-(void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
+    switch (index) {
+        case 0:
+            NSLog(@"JOB barbare");
+            /*redirect to edit stat*/
+            break;
+        case 1:
+            NSLog(@"JOB demon-hunter");
+            /*redirect to edit stat*/
+            break;
+        case 2:
+            NSLog(@"JOB moine");
+            /*redirect to edit stat*/
+            break;
+        case 3:
+            NSLog(@"JOB shaman");
+            /*redirect to edit stat*/
+            break;
+        case 4:
+            NSLog(@"JOB sorcier");
+            /*redirect to edit stat*/
+            break;
+        default:
+            break;
+    }
 }
 @end
