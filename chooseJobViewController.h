@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface chooseJobViewController : UIViewController
-
+#import "iCarousel.h"
+@interface chooseJobViewController : UIViewController <iCarouselDataSource,iCarouselDelegate>
+@property (strong, nonatomic) NSArray *characters;
+@property (nonatomic) BOOL wrap;
 @end

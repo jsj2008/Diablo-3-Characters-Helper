@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FEDEA2671581F054007A6065 /* barbare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA2621581F054007A6065 /* barbare.jpg */; };
+		FEDEA2681581F054007A6065 /* demon-hunter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA2631581F054007A6065 /* demon-hunter.jpg */; };
+		FEDEA2691581F054007A6065 /* moine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA2641581F054007A6065 /* moine.jpg */; };
+		FEDEA26A1581F054007A6065 /* shaman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA2651581F054007A6065 /* shaman.jpg */; };
+		FEDEA26B1581F054007A6065 /* sorcier.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA2661581F054007A6065 /* sorcier.jpg */; };
 		FEDF40DC158098FD002F3246 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40DB158098FD002F3246 /* UIKit.framework */; };
 		FEDF40DE158098FD002F3246 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40DD158098FD002F3246 /* Foundation.framework */; };
 		FEDF40E0158098FD002F3246 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF40DF158098FD002F3246 /* CoreGraphics.framework */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FEDEA2621581F054007A6065 /* barbare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barbare.jpg; sourceTree = "<group>"; };
+		FEDEA2631581F054007A6065 /* demon-hunter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "demon-hunter.jpg"; sourceTree = "<group>"; };
+		FEDEA2641581F054007A6065 /* moine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moine.jpg; sourceTree = "<group>"; };
+		FEDEA2651581F054007A6065 /* shaman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shaman.jpg; sourceTree = "<group>"; };
+		FEDEA2661581F054007A6065 /* sorcier.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sorcier.jpg; sourceTree = "<group>"; };
 		FEDF40D7158098FD002F3246 /* Diablo 3 Characters Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diablo 3 Characters Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDF40DB158098FD002F3246 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEDF40DD158098FD002F3246 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,9 +68,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FEDEA2601581F034007A6065 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEDEA2621581F054007A6065 /* barbare.jpg */,
+				FEDEA2631581F054007A6065 /* demon-hunter.jpg */,
+				FEDEA2641581F054007A6065 /* moine.jpg */,
+				FEDEA2651581F054007A6065 /* shaman.jpg */,
+				FEDEA2661581F054007A6065 /* sorcier.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		FEDF40CC158098FD002F3246 = {
 			isa = PBXGroup;
 			children = (
+				FEDEA2601581F034007A6065 /* Resources */,
 				FEDF40E1158098FD002F3246 /* Diablo 3 Characters Helper */,
 				FEDF40DA158098FD002F3246 /* Frameworks */,
 				FEDF40D8158098FD002F3246 /* Products */,
@@ -168,6 +191,11 @@
 			files = (
 				FEDF40E6158098FD002F3246 /* InfoPlist.strings in Resources */,
 				FEDF40EF158098FD002F3246 /* MainStoryboard.storyboard in Resources */,
+				FEDEA2671581F054007A6065 /* barbare.jpg in Resources */,
+				FEDEA2681581F054007A6065 /* demon-hunter.jpg in Resources */,
+				FEDEA2691581F054007A6065 /* moine.jpg in Resources */,
+				FEDEA26A1581F054007A6065 /* shaman.jpg in Resources */,
+				FEDEA26B1581F054007A6065 /* sorcier.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +327,7 @@
 				FEDF40F7158098FD002F3246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
