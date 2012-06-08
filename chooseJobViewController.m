@@ -9,31 +9,30 @@
 #import "chooseJobViewController.h"
 
 @interface chooseJobViewController ()
-
+@property (nonatomic) BOOL wrap;
+@property (strong, nonatomic) NSArray *characters;
 @end
 
 @implementation chooseJobViewController
-@synthesize characters=_characters, wrap=_wrap, carousel=_carousel;
+@synthesize characters=_characters, wrap=_wrap,carousel = _carousel;
 
 -(void)awakeFromNib{
-    self.wrap=NO;
+    self.wrap=YES   ;
     self.characters = [NSArray arrayWithObjects:@"barbare.jpg", @"demon-hunter.jpg", @"moine.jpg", @"shaman.jpg", @"sorcier.jpg", nil];
 }
 
 
 - (void)viewDidLoad
-{
-    iCarousel *carousel=[[iCarousel alloc] init];
-    carousel.type=iCarouselTypeCoverFlow;
-    carousel.centerItemWhenSelected=YES;
-    carousel.scrollSpeed=0.001;
-    
+{    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.carousel.type=iCarouselTypeCylinder;
+    self.carousel.scrollSpeed=0.3;
+    self.carousel.centerItemWhenSelected=YES;
 }
 
 - (void)viewDidUnload
 {
+    [self setCarousel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -54,7 +53,7 @@
     return 0;
 }
 -(CGFloat)carouselItemWidth:(iCarousel *)carousel{
-    return 150;
+    return 220;
 }
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view{
     view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[self.characters objectAtIndex:index]]];
@@ -90,5 +89,8 @@
         default:
             break;
     }
+}
+- (IBAction)chooseButton:(id)sender {
+    NSLog(@"Passe dans le button");
 }
 @end

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "iCarousel.h"
 @interface chooseJobViewController : UIViewController <iCarouselDataSource,iCarouselDelegate>
-@property (strong, nonatomic) NSArray *characters;
-@property (nonatomic) BOOL wrap;
+@property (strong, nonatomic) IBOutlet iCarousel *carousel;
+- (IBAction)chooseButton:(id)sender;
 @end
